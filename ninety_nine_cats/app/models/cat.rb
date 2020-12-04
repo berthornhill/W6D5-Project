@@ -10,7 +10,7 @@ COLORS = ["red", "yellow", "green", "blue"]
 
 
 
-    def age_check
+    def age
        age = Time.zone.now.year - self.birth_date.year 
     end
 

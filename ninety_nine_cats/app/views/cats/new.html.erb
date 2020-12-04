@@ -1,0 +1,31 @@
+<h2> Welcome to Build-a-Cat</h2>
+<br>
+<form action="<%= cats_url %>" method="POST">
+
+    <label for="name">Name</label>
+    <input id="name" type="text" name="cat[name]">
+<br>
+    <label for="birth_date">Birth Date</label>
+    <input id="birth_date" type="date" name="cat[birth_date]"> 
+    <br>
+
+    <label for="color">Select Color</label>
+    <select id="color" name="cat[color]">
+        <option disabled selected>choose color</option>
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+    </select>
+    <br>
+    <label for="sex">sex</label>
+    <input id="sex" type="text">
+    <br><br>
+    <label for="description">Description</label>
+    <textarea name="description" type="text" name="cat[description]">
+    </textarea>
+    
+    <br><br>
+    <input type="submit" value="Submit">
+    <br>
+</form>
