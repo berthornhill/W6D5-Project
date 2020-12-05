@@ -21,7 +21,9 @@ class CatsController < ApplicationController
     end
 
     def create
-        @cat = Cat.new(params[:cat])
+        debugger
+        @cat = Cat.new(cat_params)
+        debugger
         if @cat.save 
             redirect_to cats_url(@cat)
         else
